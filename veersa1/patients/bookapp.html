@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .app-time {
+  border: 1px solid #fff;
+  padding: 20px 30px;
+  box-shadow: 2px 4px 10px 0px #c7cacce3;
+}
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 5px;
+  right: 0;
+  bottom: 0;
+  left: 40px;
+  height: 20px;
+  width: 20px;
+  transition: all 0.15s ease-out 0s;
+  background: #fff;
+  border: 1px solid #999;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+.option-input:hover {
+  background: #e5e7eb;
+}
+.option-input:checked {
+  border: 1px solid #fff;
+}
+.option-input:checked::before {
+  color: #d9486d;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  content: "✔";
+  display: inline-block;
+  font-size: 12px;
+  left: 4px;
+  line-height: 20px;
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #40e0d0;
+  content: "";
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+.app-check {
+  display: flex;
+}
+.app-border {
+  border: 1px solid #ece9e9;
+  border-radius: 7px;
+  padding: 5px 7px 5px 9px;
+  padding-left: 40px;
+  min-height: 30px;
+}
+
+.option-input.radio:checked + .app-border {
+  background: #d9486d;
+}
+.option-input.radio:disabled,
+.option-input.radio:disabled + .app-border {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.app-label {
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.btn-outer-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.btn-container {
+  width: max-content;
+  background: #ddd;
+  padding: 1.5rem 2rem;
+  box-shadow: 0px 0px 10px 3px rgba(201, 201, 201, 0.5);
+  border-radius: .5rem;
+  display:flex;
+}
+
+.btn {
+  margin: 0.5em;
+  font-size: .8rem;
+  padding: .5rem 2rem;
+  border-radius: 3rem;
+  box-shadow: none;
+  border: 1px solid #523249;
+  /* color: #fff; */
+  text-transform: uppercase;
+  cursor: pointer;
+  min-width: 130px;
+  transition: all .35s ease-in;
+  font-weight: 900;
+  color: #fff;
+}
+
+.btn:hover {
+  color: #000;
+}
+
+#btn-hello {
+  background: #04A777;
+}
+
+#btn-hello:hover {
+  background: #6af0c8;
+}
+
+#btn-bye {
+  background: #881600;
+  /*815355;*/
+}
+
+#btn-bye:hover {
+  background: #FFA69E;
+}
+
+.popup {
+  position: absolute;
+  right: 0;
+  background: #ddd;
+  padding: 2rem;
+  z-index: 1;
+  border: 3px solid #523249;
+  border-radius: 9px;
+  width: 200px;
+  min-height: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: #523249;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .5s ease-in;
+  right: -1000px;
+}
+
+.popup.is-shown {
+  right: 1rem;
+}
+
+#popup-thankyou {
+  bottom: 1rem;
+}
+
+#popup-comeback {
+  top: 1rem;
+}
+
+    </style>
+</head>
+<body>
+    <div class="app-time">
+        <div>
+            <h2>BOOK APPOINTMENT</h2>
+            <p>Select the availible Time Slots!!</p>
+          <p>Timings</p>
+          <p>9:00AM to 12:00PM</p>
+          <div class="app-check">
+            <input type="radio" class="option-input radio" name="example" />
+            <div class="app-border">
+      
+              <label class="app-label">9:00 AM
+              </label>
+            </div>
+            <input type="radio" class="option-input radio" disabled name="example" />
+            <div class="app-border">
+      
+              <label class="app-label">9:30 AM
+              </label>
+            </div>
+            <input type="radio" class="option-input radio" name="example" disabled />
+            <div class="app-border">
+      
+              <label class="app-label">10:00 AM
+              </label>
+            </div>
+            <input type="radio" class="option-input radio" name="example" />
+            <div class="app-border">
+      
+              <label class="app-label">10:30 AM
+              </label>
+            </div>
+            <input type="radio" class="option-input radio" name="example" />
+            <div class="app-border">
+      
+              <label class="app-label">11:00 AM
+              </label>
+            </div>
+            <input type="radio" class="option-input radio" name="example" disabled />
+            <div class="app-border">
+      
+              <label class="app-label">11:30 AM
+              </label>
+            </div>
+          </div>
+        </div>
+<!-- 
+        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+        <button type="button" class="btn btn-secondary btn-lg">Large button</button> -->
+
+
+        <div class="container">
+            <div class="btn-outer-container">
+            <div class="btn-container">
+              <button class="btn" id="btn-hello" data-popup="popup-thankyou" onclick="clicked(event)">Confirm Appointment</button>
+              <button class="btn" id="btn-bye" data-popup="popup-comeback">Cancel Appointment</button>
+            </div>
+            </div>
+          </div>
+          <div class="popup" id="popup-thankyou">Your Appointment has been scheduled</div>
+          <div class="popup" id="popup-comeback">Reschedule Your Appointment!</div>
+          <div class="popup" id="popup-thankyou">Your Appointment has been scheduled</div>
+      
+          </div>
+        </div>
+      </div>
+
+     
+</body>
+
+<script>
+
+function clicked(e)
+{
+    if(!confirm('Confirm the Appointment?')) {
+        e.preventDefault();
+    }
+}
+    const popups = document.querySelectorAll('.popup');
+
+const disablePopups = () => {
+  popups.forEach((popup) => {
+    popup.classList.remove('is-shown');
+  });
+}
+
+const handleClick = (e) => {
+  const targetEL = e.target;
+
+  if (targetEL.classList.contains('btn')) {
+    disablePopups();
+
+    const popup = document.getElementById(targetEL.dataset.popup);
+    popup.classList.add('is-shown');
+
+    setTimeout(() => { popup.classList.remove('is-shown') }, 8000);
+    return;
+  }
+
+  if (targetEL.classList.contains('popup')) {
+    return;
+  }
+
+  disablePopups();
+}
+
+
+document.addEventListener('click', handleClick);
+
+document.addEventListener('touchend', handleClick);
+</script>
+</html>

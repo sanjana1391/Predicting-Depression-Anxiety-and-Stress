@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, Ample lite admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, Ample admin lite dashboard bootstrap 5 dashboard template">
+    <meta name="description"
+        content="Ample Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title>VeersaHealth</title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/ample-admin-lite/" />
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
+    <!-- Custom CSS -->
+    <link href="plugins/bower_components/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css">
+    <!-- Custom CSS -->
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+     
+        <header class="topbar" data-navbarbg="skin5">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <div class="navbar-header" data-logobg="skin6">
+                    <p style=" background:transparent; text-align:center; font-weight:bold; font-size: 21px;">VeersaHealth</p>
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <!--<a class="navbar-brand" href="index.html">
+                         Logo icon -->
+                        <!--<b class="logo-icon">
+                             Dark Logo icon -->
+                            <!--<img src="plugins/images/logo-icon.png" alt="homepage" />
+                        </b>
+                        
+                        <!End Logo icon -->
+                        <!-- Logo text -->
+                        <!--<span class="logo-text">
+                    
+                     ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <a class="nav-toggler waves-effect waves-light text-dark d-block d-md-none"
+                        href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+                   
+                    <!-- ============================================================== -->
+                    <!-- Right side toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav ms-auto d-flex align-items-center">
+
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class=" in">
+                            <form role="search" class="app-search d-none d-md-block me-3">
+                                <input type="text" placeholder="Search..." class="form-control mt-0">
+                                <a href="" class="active">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </form>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li>
+                            <a class="profile-pic" href="#">
+                                <img src="plugins/images/users/varun.jpg" alt="user-img" width="36"
+                                    class="img-circle"><span class="text-white font-medium">Dr. Steave</span></a>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <!-- User Profile-->
+                        <li class="sidebar-item pt-2">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html"
+                                aria-expanded="false">
+                                <i class="far fa-clock" aria-hidden="true"></i>
+                                <span class="hide-menu">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="profile.html"
+                                aria-expanded="false">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span class="hide-menu">Profile</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="basic-table.html"
+                                aria-expanded="false">
+                                <i class="fa fa-table" aria-hidden="true"></i>
+                                <span class="hide-menu">All Appointments
+                            
+                                </span>
+                            </a>
+                        </li>
+                        <!--<li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="fontawesome.html"
+                                aria-expanded="false">
+                                <i class="fa fa-font" aria-hidden="true"></i>
+                                <span class="hide-menu">Icon</span>
+                            </a>
+                        </li>-->
+                        <!--<li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="map-google.html"
+                                aria-expanded="false">
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                <span class="hide-menu">Google Map</span>
+                            </a>
+                        </li>-->
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="blank.html"
+                                aria-expanded="false">
+                                <i class="fa fa-columns" aria-hidden="true"></i>
+                                <span class="hide-menu">Manage Appointments</span>
+                            </a>
+                        </li>
+                        <!--<li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="404.html"
+                                aria-expanded="false">
+                                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                <span class="hide-menu">Error 404</span>
+                            </a>
+                        </li>-->
+                        <!--<li class="text-center p-20 upgrade-btn">
+                            <a href="https://www.wrappixel.com/templates/ampleadmin/"
+                                class="btn d-grid btn-danger text-white" target="_blank">
+                                Upgrade to Pro</a>
+                        </li>-->
+                    </ul>
+
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb bg-white">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Dashboard</h4>
+                    </div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                        <div class="d-md-flex">
+                            <ol class="breadcrumb ms-auto">
+                                <li><a href="#" class="fw-normal">Dashboard</a></li>
+                            </ol>
+                            <a href="index1.html" target="_blank"
+                            class="btn btn-danger  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">LogOut</a>
+                            
+                            <!--<a href="https://www.wrappixel.com/templates/ampleadmin/" target="_blank"
+                                class="btn btn-danger  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">Upgrade
+                                to Pro</a>-->
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Three charts -->
+                <!-- ============================================================== -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="white-box analytics-info">
+                            <h3 class="box-title">Total Patients</h3>
+                            <ul class="list-inline two-part d-flex align-items-center mb-0">
+                                <li>
+                                    <div id="sparklinedash"><canvas width="67" height="30"
+                                            style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
+                                    </div>
+                                </li>
+                                <li class="ms-auto"><span class="counter text-success">12</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="white-box analytics-info">
+                            <h3 class="box-title">Online Patients</h3>
+                            <ul class="list-inline two-part d-flex align-items-center mb-0">
+                                <li>
+                                    <div id="sparklinedash2"><canvas width="67" height="30"
+                                            style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
+                                    </div>
+                                </li>
+                                <li class="ms-auto"><span class="counter text-purple">8</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="white-box analytics-info">
+                            <h3 class="box-title">Offline Patients</h3>
+                            <ul class="list-inline two-part d-flex align-items-center mb-0">
+                                <li>
+                                    <div id="sparklinedash3"><canvas width="67" height="30"
+                                            style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
+                                    </div>
+                                </li>
+                                <li class="ms-auto"><span class="counter text-info">4</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- PRODUCTS YEARLY SALES -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="white-box">
+                            <h3 class="box-title">Online-Offline Patients Ratio</h3>
+                            <div class="d-md-flex">
+                                <ul class="list-inline d-flex ms-auto">
+                                    <li class="ps-3">
+                                        <h5><i class="fa fa-circle me-1 text-info"></i>Online</h5>
+                                    </li>
+                                    <li class="ps-3">
+                                        <h5><i class="fa fa-circle me-1 text-inverse"></i>Offline</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="ct-visits" style="height: 405px;">
+                                <div class="chartist-tooltip" style="top: -17px; left: -12px;"><span
+                                        class="chartist-tooltip-value">6</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- RECENT SALES -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12">
+                        <div class="white-box">
+                            <div class="d-md-flex mb-3">
+                                <h3 class="box-title mb-0">Recent Appointments</h3>
+                                <div class="col-md-3 col-sm-4 col-xs-6 ms-auto">
+                                    <select class="form-select shadow-none row border-top">
+                                        <option>March 2021</option>
+                                        <option>April 2021</option>
+                                        <option>May 2021</option>
+                                        <option>June 2021</option>
+                                        <option>July 2021</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table no-wrap">
+                                    <thead>
+                                        <tr>
+                                            <th class="border-top-0">#</th>
+                                            <th class="border-top-0">Name</th>
+                                            <th class="border-top-0">Status</th>
+                                            <th class="border-top-0">Date</th>
+                                            <th class="border-top-0">Billing</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="txt-oflo">Chirstopher Wallace</td>
+                                            <td>Online</td>
+                                            <td class="txt-oflo">April 18, 2021</td>
+                                            <td><span class="text-success">$24</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="txt-oflo">Hannah Baker</td>
+                                            <td>Offline</td>
+                                            <td class="txt-oflo">April 19, 2021</td>
+                                            <td><span class="text-info">$1250</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td class="txt-oflo">John Snow</td>
+                                            <td>Offline</td>
+                                            <td class="txt-oflo">April 19, 2021</td>
+                                            <td><span class="text-info">$1250</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td class="txt-oflo">Clay Jensen</td>
+                                            <td>Offline</td>
+                                            <td class="txt-oflo">April 20, 2021</td>
+                                            <td><span class="text-success">$24</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td class="txt-oflo">Thomas Shelby</td>
+                                            <td>Online</td>
+                                            <td class="txt-oflo">April 21, 2021</td>
+                                            <td><span class="text-success">$24</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td class="txt-oflo">Courtney Cox</td>
+                                            <td>Online</td>
+                                            <td class="txt-oflo">April 23, 2021</td>
+                                            <td><span class="text-success">$14</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td class="txt-oflo">Sheldon Cooper</td>
+                                            <td>Offline</td>
+                                            <td class="txt-oflo">April 22, 2021</td>
+                                            <td><span class="text-success">$64</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- Recent Comments -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <!-- .col -->
+                    <div class="col-md-12 col-lg-8 col-sm-12">
+                        <div class="card white-box p-0">
+                            <div class="card-body">
+                                <h3 class="box-title mb-0">Upcoming Appointments</h3>
+                            </div>
+                            <div class="comment-widgets">
+                                <!-- Comment Row -->
+                                <div class="d-flex flex-row comment-row p-3 mt-0">
+                                    <div class="p-2"><img src="https://i.pinimg.com/736x/0f/88/ec/0f88ec8f35015d0b0d73810525f4f1c9.jpg" alt="user" width="50" class="rounded-circle"></div>
+                                    <div class="comment-text ps-2 ps-md-3 w-100">
+                                        <h5 class="font-medium">Scarlet Gupta</h5>
+                                        <span class="mb-3 d-block">Mild Fever </span>
+                                        <div class="comment-footer d-md-flex align-items-center">
+                                             <span class="badge bg-primary rounded">Pending</span>
+                                             
+                                            <div class="text-muted fs-2 ms-auto mt-2 mt-md-0">3:30 PM IST, April 14, 2021</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Comment Row -->
+                                <div class="d-flex flex-row comment-row p-3">
+                                    <div class="p-2"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/570a1745898621.58408191aee7a.jpg" alt="user" width="50" class="rounded-circle"></div>
+                                    <div class="comment-text ps-2 ps-md-3 active w-100">
+                                        <h5 class="font-medium">Michael Jordan</h5>
+                                        <span class="mb-3 d-block">Throat Infection </span>
+                                        <div class="comment-footer d-md-flex align-items-center">
+
+                                            <span class="badge bg-primary rounded">Pending</span>
+                                            
+                                            <div class="text-muted fs-2 ms-auto mt-2 mt-md-0">5PM IST, April 14, 2021</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Comment Row -->
+                                <div class="d-flex flex-row comment-row p-3">
+                                    <div class="p-2"><img src="https://s2.r29static.com/bin/entry/ba7/x,80/1940798/image.jpg" alt="user" width="50" class="rounded-circle"></div>
+                                    <div class="comment-text ps-2 ps-md-3 w-100">
+                                        <h5 class="font-medium">Ria Gupta</h5>
+                                        <span class="mb-3 d-block">Tonslils </span>
+                                        <div class="comment-footer d-md-flex align-items-center">
+
+                                            <span class="badge rounded bg-primary">Pending</span>
+                                            
+                                            <div class="text-muted fs-2 ms-auto mt-2 mt-md-0">7PM IST, April 14, 2021</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="card white-box p-0">
+                            <div class="card-heading">
+                                <h3 class="box-title mb-0">Recent Logs</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul class="chatonline">
+                                    <li>
+                                        <div class="call-chat">
+                                            <button class="btn btn-success text-white btn-circle btn" type="button">
+                                                <i class="fas fa-phone"></i>
+                                            </button>
+                                            <button class="btn btn-info btn-circle btn" type="button">
+                                                <i class="far fa-comments text-white"></i>
+                                            </button>
+                                        </div>
+                                        <a href="javascript:void(0)" class="d-flex align-items-center"><img
+                                                src="https://i.pinimg.com/736x/0f/88/ec/0f88ec8f35015d0b0d73810525f4f1c9.jpg" alt="user-img" class="img-circle">
+                                            <div class="ms-2">
+                                                <span class="text-dark">Scarlett Johanson <small
+                                                        class="d-block text-success d-block">online</small></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="call-chat">
+                                            <button class="btn btn-success text-white btn-circle btn" type="button">
+                                                <i class="fas fa-phone"></i>
+                                            </button>
+                                            <button class="btn btn-info btn-circle btn" type="button">
+                                                <i class="far fa-comments text-white"></i>
+                                            </button>
+                                        </div>
+                                        <a href="javascript:void(0)" class="d-flex align-items-center"><img
+                                                src="plugins/images/users/genu.jpg" alt="user-img" class="img-circle">
+                                            <div class="ms-2">
+                                                <span class="text-dark">Dr. 
+                                                    James <small class="d-block text-warning">Away</small></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="call-chat">
+                                            <button class="btn btn-success text-white btn-circle btn" type="button">
+                                                <i class="fas fa-phone"></i>
+                                            </button>
+                                            <button class="btn btn-info btn-circle btn" type="button">
+                                                <i class="far fa-comments text-white"></i>
+                                            </button>
+                                        </div>
+                                        <a href="javascript:void(0)" class="d-flex align-items-center"><img
+                                                src="https://source.unsplash.com/90x90/?patients" alt="user-img" class="img-circle">
+                                            <div class="ms-2">
+                                                <span class="text-dark">Stephen Curry
+                                                     <small class="d-block text-danger">Busy</small></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="call-chat">
+                                            <button class="btn btn-success text-white btn-circle btn" type="button">
+                                                <i class="fas fa-phone"></i>
+                                            </button>
+                                            <button class="btn btn-info btn-circle btn" type="button">
+                                                <i class="far fa-comments text-white"></i>
+                                            </button>
+                                        </div>
+                                        <a href="javascript:void(0)" class="d-flex align-items-center"><img
+                                                src="data:image/jpeg;base64,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" alt="user-img" class="img-circle">
+                                            <div class="ms-2">
+                                                <span class="text-dark">Kanye West <small class="d-block text-muted">Offline</small></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="call-chat">
+                                            <button class="btn btn-success text-white btn-circle btn" type="button">
+                                                <i class="fas fa-phone"></i>
+                                            </button>
+                                            <button class="btn btn-info btn-circle btn" type="button">
+                                                <i class="far fa-comments text-white"></i>
+                                            </button>
+                                        </div>
+                                      
+                                    </li>
+                                    <li>
+                                        <div class="call-chat">
+                                            <button class="btn btn-success text-white btn-circle btn" type="button">
+                                                <i class="fas fa-phone"></i>
+                                            </button>
+                                            <button class="btn btn-info btn-circle btn" type="button">
+                                                <i class="far fa-comments text-white"></i>
+                                            </button>
+                                        </div>
+                                        <a href="javascript:void(0)" class="d-flex align-items-center"><img
+                                                src="https://source.unsplash.com/90x90/?man" alt="user-img" class="img-circle">
+                                            <div class="ms-2">
+                                                <span class="text-dark">Elon Musk
+                                                    <small class="d-block text-success">online</small></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app-style-switcher.js"></script>
+    <script src="plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.js"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="plugins/bower_components/chartist/dist/chartist.min.js"></script>
+    <script src="plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="js/pages/dashboards/dashboard1.js"></script>
+</body>
+
+</html>
