@@ -1,18 +1,6 @@
-/*
-Template Name: Admin Template
-Author: Niravjoshi / Wrappixel
-File: scss
-*/
-/*******************************/
-/*******************************/
+
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
-/*Theme Colors*/
-/*Topbar Colors*/
-/*Sidebar Colors*/
-/*Boxed layout width*/
-/*Shadow*/
-/*transitions*/
-/*Dark transparent bg*/
+
 @import url(icons/font-awesome/css/fontawesome-all.css);
 @import url(icons/themify-icons/themify-icons.css);
 @import url(icons/material-design-iconic-font/css/materialdesignicons.min.css);
